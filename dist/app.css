@@ -4,8 +4,36 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: aquamarine;
+}
+
 .debug {
   height: 100px;
   width: 100px;
   background-color: red;
+}
+
+header {
+  background-color: bisque;
+  height: 100px;
+}
+header .row .box.logo {
+  background-color: brown;
+}
+header .row .box.logo a {
+  line-height: 100px;
+}
+header .row .box.logo a img {
+  height: 50px;
+}
+header .row .box.searchbar {
+  position: relative;
+}
+header .row .box.searchbar a {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
 }

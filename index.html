@@ -1,24 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- CDN Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- CDN Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <!-- CDN Font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
     <link rel="preconnect" href="https://fonts.gstatic.com/%22%3E">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
-
+    <!-- link css -->
     <link rel="stylesheet" href="dist/app.css">
 
     <!-- mi raccomando inserisci lo yeld per ogni pagina -->
     <title>Document</title>
 
 </head>
+
 <body>
-    
+
     <!-- header -->
     <header>
         <div class="container">
@@ -27,7 +39,8 @@
                 <div class="box logo">
                     <!-- Rotta home del guest -->
                     <a href="{{ route(user.home) }}">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_B%C3%A9lo.svg/1200px-Airbnb_Logo_B%C3%A9lo.svg.png" alt="logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_B%C3%A9lo.svg/1200px-Airbnb_Logo_B%C3%A9lo.svg.png"
+                            alt="logo">
                     </a>
                 </div>
                 <!-- SEARCHBAR -->
@@ -36,7 +49,7 @@
                         <!-- Rotta show/Ricerca -->
                         <i class="fas fa-search"></i>
                     </a>
-                    <input type="text" placeholder="search apartment">
+                    <input type="text" placeholder="search apartment" textarea="">
                 </div>
                 <div class="box login d-flex align-items-center">
                     <div class="language">
@@ -47,18 +60,19 @@
                     <!-- DROPDOWN UTENTE -->
                     <div class="user">
                         <div class="dropdown">
-                            <a class="btn btn-secondary" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="btn btn_dd" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
                                 <i class="fas fa-user-circle fa-2x"></i>
                             </a>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                                 <!-- Rotta registrazione utente -->
-                              <a class="dropdown-item" href="#">Register</a>
-                            <!-- Rotta Log In utente -->
-                              <a class="dropdown-item" href="#">Log In</a>
-                            <!-- Rotta sponsor utente -->
-                              <a class="dropdown-item" href="#">Sponsor</a>
+                                <a class="dropdown-item" href="#">Register</a>
+                                <!-- Rotta Log In utente -->
+                                <a class="dropdown-item" href="#">Log In</a>
+                                <!-- Rotta sponsor utente -->
+                                <a class="dropdown-item" href="#">Sponsor</a>
                             </div>
-                          </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -69,12 +83,12 @@
     <main>
 
     </main>
-    <!-- INSERIRE BARRA A SCOMPARSA A MEDIAQUERY PICCOLA -->
+    <!-- Inserire barra a scomparsa a mediaquery piccola -->
     <footer>
         <div class="container">
-            <!-- LISTA VERTICALE CON LINK GITHUB -->
+            <!-- Lista verticale con link Github -->
             <div class="row d-flex align-items-center justify-content-between">
-                <!-- LINK DETTAGLI -->
+                <!-- Link dettagli -->
                 <div class="box left">
                     <ul>
                         <li><i class="far fa-copyright"></i> 2021 Boolbnb, Team 7</li>
@@ -84,14 +98,14 @@
                         <li><a href="#">Dettagli dell'azienda</a></li>
                     </ul>
                 </div>
-                <!-- LANGUAGE -->
+                <!-- Lingue -->
                 <div class="box center">
                     <ul>
                         <li><a href="#"><i class="fas fa-globe-europe"></i> Italiano(IT)</a></li>
                         <li><a href="#">&euro; EUR</a></li>
                     </ul>
                 </div>
-                <!-- SOCIAL -->
+                <!-- Social -->
                 <div class="box right">
                     <ul>
                         <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
@@ -102,7 +116,8 @@
             </div>
         </div>
     </footer>
-
+    <!-- Link js  -->
     <script src="dist/app.js"></script>
 </body>
+
 </html>

@@ -15,15 +15,16 @@ body {
     background-color: red;
 }
 
+
 ul {
     list-style: none;
     li {
         display: inline-block;
-        a{
+        a {
             color: black;
-            &:hover{
-            color: lightslategray;
-           }
+            &:hover {
+                color: lightslategray;
+            }
         }
     }
 }
@@ -31,7 +32,7 @@ ul {
 // header
 
 header {
-    background-color: bisque;
+    background-color: white;
     .row {
         height: 100px;
         .box {
@@ -50,7 +51,7 @@ header {
                     right: 0;
                     transform: translate(-50%, -50%);
                     padding: 5px 10px;
-                    background-color: #ff385c;
+                    background-color: #ff5a5f;
                     border-radius: 50%;
                     color: white;
                 }
@@ -60,7 +61,15 @@ header {
                     border-radius: 50px;
                     &::placeholder {
                         text-align: center;
+                        border-radius: 50px;
                     }
+                    &:active{
+                        outline: none;
+                    }
+                    &:focus{
+                        outline: none;
+                    }
+                    
                 }
             }
             &.login {
@@ -68,26 +77,15 @@ header {
                     margin-right: 10px;
                     i {
                         font-size: 1.7em;
+                        color: #ff5a5f;
                     }
                 }
-            }
-        }
-    }
-}
-
-footer {
-    background-color: lightgreen;
-    .row {
-        height: 100px;
-        .box{
-            &.left{
-                li{
-                    padding-right: 5px;
-                }
-            }
-            &.center, &.right{
-                li{
-                    padding-left: 20px;
+                .user {
+                    .dropdown {
+                        .btn_dd {
+                            color: #ff5a5f;
+                        }
+                    }
                 }
             }
         }
@@ -107,9 +105,30 @@ footer {
 @media screen and (max-width: 767px) and (min-width: 577px) {
 }
 
+//Footer
+
+footer {
+    background-color: #F7F7F7;
+    .row {
+        height: 100px;
+        .box {
+            &.left {
+                li {
+                    padding-right: 5px;
+                }
+            }
+            &.center,
+            &.right {
+                li {
+                    padding-left: 20px;
+                }
+            }
+        }
+    }
+}
+
 // MediaQuery FOOTER
 
 //Cambiare il box left da orizzontale a verticale.
 @media screen and (max-width: 767px) {
 }
-

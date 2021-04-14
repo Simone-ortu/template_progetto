@@ -29,7 +29,7 @@ ul li a:hover {
 }
 
 header {
-  background-color: bisque;
+  background-color: white;
 }
 header .row {
   height: 100px;
@@ -47,7 +47,7 @@ header .row .box.searchbar a {
   right: 0;
   transform: translate(-50%, -50%);
   padding: 5px 10px;
-  background-color: #ff385c;
+  background-color: #ff5a5f;
   border-radius: 50%;
   color: white;
 }
@@ -58,22 +58,35 @@ header .row .box.searchbar input {
 }
 header .row .box.searchbar input::-moz-placeholder {
   text-align: center;
+  border-radius: 50px;
 }
 header .row .box.searchbar input:-ms-input-placeholder {
   text-align: center;
+  border-radius: 50px;
 }
 header .row .box.searchbar input::placeholder {
   text-align: center;
+  border-radius: 50px;
+}
+header .row .box.searchbar input:active {
+  outline: none;
+}
+header .row .box.searchbar input:focus {
+  outline: none;
 }
 header .row .box.login .language {
   margin-right: 10px;
 }
 header .row .box.login .language i {
   font-size: 1.7em;
+  color: #ff5a5f;
+}
+header .row .box.login .user .dropdown .btn_dd {
+  color: #ff5a5f;
 }
 
 footer {
-  background-color: lightgreen;
+  background-color: #F7F7F7;
 }
 footer .row {
   height: 100px;

@@ -15,6 +15,19 @@ body {
   background-color: red;
 }
 
+ul {
+  list-style: none;
+}
+ul li {
+  display: inline-block;
+}
+ul li a {
+  color: black;
+}
+ul li a:hover {
+  color: lightslategray;
+}
+
 header {
   background-color: bisque;
 }
@@ -57,4 +70,17 @@ header .row .box.login .language {
 }
 header .row .box.login .language i {
   font-size: 1.7em;
+}
+
+footer {
+  background-color: lightgreen;
+}
+footer .row {
+  height: 100px;
+}
+footer .row .box.left li {
+  padding-right: 5px;
+}
+footer .row .box.center li, footer .row .box.right li {
+  padding-left: 20px;
 }

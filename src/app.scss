@@ -15,6 +15,19 @@ body {
     background-color: red;
 }
 
+ul {
+    list-style: none;
+    li {
+        display: inline-block;
+        a{
+            color: black;
+            &:hover{
+            color: lightslategray;
+           }
+        }
+    }
+}
+
 // header
 
 header {
@@ -27,7 +40,6 @@ header {
                     height: 50px;
                 }
             }
-
             &.searchbar {
                 position: relative;
                 flex-grow: 0.66;
@@ -63,20 +75,34 @@ header {
     }
 }
 
-
+footer {
+    background-color: lightgreen;
+    .row {
+        height: 100px;
+        .box{
+            &.left{
+                li{
+                    padding-right: 5px;
+                }
+            }
+            &.center, &.right{
+                li{
+                    padding-left: 20px;
+                }
+            }
+        }
+    }
+}
 
 // MediaQuery HEADER
 
-// 1) Max-width 576px 
-// 2) Da min-width 577px a max-width 767px 
+// 1) Max-width 576px
+// 2) Da min-width 577px a max-width 767px
 
-
-// Visualizzazione barra di ricerca sopra, invece user e logo nel footer. 
-@media screen and (max-width:576px){
-    
+// Visualizzazione barra di ricerca sopra, invece user e logo nel footer.
+@media screen and (max-width: 576px) {
 }
 
 // Visualizzazione media misura: modificare logo di sinistra e dropdown user destra (prima row), input di ricerca sotto al centro (seconda row).
-@media screen and (max-width:767px) and (min-width:577px){
-    
+@media screen and (max-width: 767px) and (min-width: 577px) {
 }

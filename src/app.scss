@@ -62,3 +62,21 @@ header {
         }
     }
 }
+
+
+
+// MediaQuery HEADER
+
+// 1) Max-width 576px 
+// 2) Da min-width 577px a max-width 767px 
+
+
+// Visualizzazione barra di ricerca sopra, invece user e logo nel footer. 
+@media screen and (max-width:576px){
+    
+}
+
+// Visualizzazione media misura: modificare logo di sinistra e dropdown user destra (prima row), input di ricerca sotto al centro (seconda row).
+@media screen and (max-width:767px) and (min-width:577px){
+    
+}

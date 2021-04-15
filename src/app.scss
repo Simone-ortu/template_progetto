@@ -43,10 +43,12 @@ header {
                     display: none;
                 }
             }
-            &.searchbar {
+            .search_bar{
                 position: relative;
                 flex-grow: 0.66;
-
+                padding: 10px 20px;
+                box-shadow: 0 0 15px lightgray;
+                border-radius: 20px;
                 a {
                     position: absolute;
                     top: 50%;

@@ -47,16 +47,16 @@ header .row .box.login .user .dropdown .btn_dd {
   color: #ff5a5f;
 }
 header .row .box.search_bar {
-  padding: 10px 20px;
-  box-shadow: 0 0 15px lightgray;
-  border-radius: 20px;
+  width: 300px;
+  padding: 5px 10px;
+  box-shadow: 0 0 10px lightgray;
+  border-radius: 5px;
 }
 header .row .box.search_bar input {
   margin: 0 16px;
   width: calc(100% - 32px);
   border: none;
   line-height: 18px;
-  font-weight: 600;
 }
 header .row .box.search_bar input:focus {
   outline: none;

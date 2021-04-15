@@ -61,8 +61,8 @@ header {
                 }
                 input {
                     padding-left: 50px;
-                    width: 100%;
-                    height: 50px;
+                    max-width: 100%;
+                    height: 100%;
                     border-radius: 50px;
                     &::placeholder {
                         border-radius: 50px;
@@ -139,7 +139,7 @@ header {
 footer {
     background-color: #f7f7f7;
     .row {
-        height: 100px;
+       max-height: 150px;
         .box {
             &.left {
                 li {
@@ -160,4 +160,20 @@ footer {
 
 //Cambiare il box left da orizzontale a verticale.
 @media screen and (max-width: 767px) {
+    footer{
+        .container{
+            .row{
+                .box{
+                    &.left{
+                        ul{
+                            li{
+                                display: block;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
 }

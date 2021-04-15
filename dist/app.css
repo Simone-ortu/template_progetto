@@ -59,8 +59,8 @@ header .row .box .search_bar a {
 }
 header .row .box .search_bar input {
   padding-left: 50px;
-  width: 100%;
-  height: 50px;
+  max-width: 100%;
+  height: 100%;
   border-radius: 50px;
 }
 header .row .box .search_bar input::-moz-placeholder {
@@ -105,11 +105,17 @@ footer {
   background-color: #f7f7f7;
 }
 footer .row {
-  height: 100px;
+  max-height: 150px;
 }
 footer .row .box.left li {
   padding-right: 5px;
 }
 footer .row .box.center li, footer .row .box.right li {
   padding-left: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  footer .container .row .box.left ul li {
+    display: block;
+  }
 }

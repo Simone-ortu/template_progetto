@@ -15,7 +15,6 @@ body {
     background-color: red;
 }
 
-
 ul {
     list-style: none;
     li {
@@ -40,6 +39,9 @@ header {
                 img {
                     height: 50px;
                 }
+                .logo-small {
+                    display: none;
+                }
             }
             &.searchbar {
                 position: relative;
@@ -63,24 +65,21 @@ header {
                     &::placeholder {
                         border-radius: 50px;
                     }
-                    &:active{
+                    &:active {
                         outline: none;
                     }
-                    &:focus{
+                    &:focus {
                         outline: none;
                     }
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
                 }
             }
             &.login {
-                .language {
-                    margin-right: 10px;
-                    i {
-                        font-size: 1.7em;
-                        color: #ff5a5f;
-                    }
-                }
                 .user {
+                    margin-left: 20px;
                     .dropdown {
                         .btn_dd {
                             color: #ff5a5f;
@@ -99,16 +98,48 @@ header {
 
 // Visualizzazione barra di ricerca sopra, invece user e logo nel footer.
 @media screen and (max-width: 576px) {
+    header {
+        .container {
+            .row {
+                .box {
+                    a {
+                        .main {
+                            display: none;
+                        }
+                        .logo-small {
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 // Visualizzazione media misura: modificare logo di sinistra e dropdown user destra (prima row), input di ricerca sotto al centro (seconda row).
 @media screen and (max-width: 767px) and (min-width: 577px) {
+    header {
+        .container {
+            .row {
+                .box {
+                    a {
+                        .main {
+                            display: none;
+                        }
+                        .logo-small {
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 //Footer
 
 footer {
-    background-color: #F7F7F7;
+    background-color: #f7f7f7;
     .row {
         height: 100px;
         .box {

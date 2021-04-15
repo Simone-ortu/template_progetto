@@ -39,8 +39,9 @@
                 <div class="box logo">
                     <!-- Rotta home del guest -->
                     <a href="{{ route(user.home) }}">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_B%C3%A9lo.svg/1200px-Airbnb_Logo_B%C3%A9lo.svg.png"
+                        <img class="main" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_B%C3%A9lo.svg/1200px-Airbnb_Logo_B%C3%A9lo.svg.png"
                             alt="logo">
+                            <img class="logo-small" src="https://i.postimg.cc/5242xRKq/Senza-titolo-1.png" alt="Logo piccolo">
                     </a>
                 </div>
                 <!-- SEARCHBAR -->
@@ -49,14 +50,9 @@
                         <!-- Rotta show/Ricerca -->
                         <i class="fas fa-search"></i>
                     </a>
-                    <input type="text" placeholder="search apartment" textarea="">
+                    <input type="text" placeholder="search apartment">
                 </div>
                 <div class="box login d-flex align-items-center">
-                    <div class="language">
-                        <a href="#">
-                            <i class="fas fa-globe-europe"></i>
-                        </a>
-                    </div>
                     <!-- DROPDOWN UTENTE -->
                     <div class="user">
                         <div class="dropdown">
@@ -64,7 +60,7 @@
                                 aria-haspopup="true" aria-expanded="false">
                                 <i class="fas fa-user-circle fa-2x"></i>
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenu">
+                            <div class="dropdown-menu  dropdown-menu-right" aria-labelledby="dropdownMenu">
                                 <!-- Rotta registrazione utente -->
                                 <a class="dropdown-item" href="#">Register</a>
                                 <!-- Rotta Log In utente -->

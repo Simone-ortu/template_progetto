@@ -37,6 +37,9 @@ header .row {
 header .row .box.logo img {
   height: 50px;
 }
+header .row .box.logo .logo-small {
+  display: none;
+}
 header .row .box.searchbar {
   position: relative;
   flex-grow: 0.66;
@@ -72,19 +75,31 @@ header .row .box.searchbar input:active {
 header .row .box.searchbar input:focus {
   outline: none;
 }
-header .row .box.login .language {
-  margin-right: 10px;
-}
-header .row .box.login .language i {
-  font-size: 1.7em;
-  color: #ff5a5f;
+header .row .box.login .user {
+  margin-left: 20px;
 }
 header .row .box.login .user .dropdown .btn_dd {
   color: #ff5a5f;
 }
 
+@media screen and (max-width: 576px) {
+  header .container .row .box a .main {
+    display: none;
+  }
+  header .container .row .box a .logo-small {
+    display: inline-block;
+  }
+}
+@media screen and (max-width: 767px) and (min-width: 577px) {
+  header .container .row .box a .main {
+    display: none;
+  }
+  header .container .row .box a .logo-small {
+    display: inline-block;
+  }
+}
 footer {
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
 }
 footer .row {
   height: 100px;
